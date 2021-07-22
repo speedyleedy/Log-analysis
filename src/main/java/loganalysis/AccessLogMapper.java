@@ -24,14 +24,14 @@ public class AccessLogMapper {
     }
 
     public static AccessLogEntry StringToAccessLog (String line){
-        Pattern pattern = Pattern.compile("(?<=GET | POST | PUT | HEAD | DELETE | PATCH | OPTIONS).*?\\s");
+        Pattern pattern = Pattern.compile("(?<=GET |POST |PUT |HEAD |DELETE |PATCH |OPTIONS).*?\\s");
         AccessLogEntry al = new AccessLogEntry();
         String[] splitted = line.split(" ");
         al.setIpAddress(splitted[0]);
 
         Matcher matcher = pattern.matcher(line);
         if (matcher.find()){
-            al.setPath(matcher.group(0));
+            al.setPath(matcher.group(0).trim());
         }
         return al;
     }

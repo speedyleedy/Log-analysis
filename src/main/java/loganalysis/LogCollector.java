@@ -12,13 +12,6 @@ import java.util.stream.Collector;
 
 public class LogCollector implements Collector<AccessLogEntry, List<StatAccumulator>, List<StatAccumulator>> {
 
-//    //change StringBuffer to HashMap<String, LogStat>
-//    List<LogStatisticCollector> collectors = null;
-//
-//    public LogCollector() {
-//        collectors = new ArrayList<>();
-//        collectors.add(new IpStatCollector());
-
 
     @Override
     public Supplier<List<StatAccumulator>> supplier() {
