@@ -12,6 +12,10 @@ import java.util.stream.Collector;
 
 public class LogCollector implements Collector<AccessLogEntry, List<StatAccumulator>, List<StatAccumulator>> {
 
+    /*Collector takes a supplier (a statAccumulator) and creates objects for each of my collectors.
+    * the accumulator method is called for each stream which will process each line twice, once for the IP collector
+    * and once for the URL collector
+    * */
 
     @Override
     public Supplier<List<StatAccumulator>> supplier() {
@@ -20,17 +24,18 @@ public class LogCollector implements Collector<AccessLogEntry, List<StatAccumula
 
     @Override
     public BiConsumer<List<StatAccumulator>, AccessLogEntry> accumulator() {
-        return (hm, entry) -> hm.forEach(processor -> processor.processLine(entry));
+        return (l, entry) -> l.forEach(processor -> processor.processLine(entry));
     }
 
     @Override
     public BinaryOperator<List<StatAccumulator>> combiner() {
+        /*not using combiner. this is for multiple threads.*/
         return null;
     }
 
     @Override
     public Function<List<StatAccumulator>, List<StatAccumulator>> finisher() {
-        return hm -> hm;
+        return l -> l;
     }
 
 

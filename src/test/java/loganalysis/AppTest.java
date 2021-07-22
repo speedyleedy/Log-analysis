@@ -20,10 +20,6 @@ import java.util.stream.Stream;
 public class AppTest 
 {
 
-    @BeforeMethod
-    public void setUp() {
-
-    }
 
     @Test
     public void TopThreeIpAddressesFromFileIntegrationTest() throws IOException {
@@ -90,6 +86,20 @@ public class AppTest
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, HashMap::new));
 
         Assert.assertEquals(Optional.of(4), Optional.ofNullable(mostCommonIp.get("168.41.191.40")));
+
+    }
+
+    @Test
+    public void FindNumberOfUniqueIpAddresses() throws IOException {
+
+        Stream<String> stream = Files.lines(
+                Paths.get("src/test/java/loganalysis/log.txt"), StandardCharsets.UTF_8);
+
+        List<StatAccumulator> collect = stream
+                .map(AccessLogMapper::StringToAccessLog)
+                .collect(new LogCollector());
+
+        Assert.assertEquals(Optional.of(11), Optional.ofNullable(collect.get(0).getStats().size()));
 
     }
 

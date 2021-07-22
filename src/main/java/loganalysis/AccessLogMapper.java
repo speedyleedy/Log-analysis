@@ -23,14 +23,17 @@ public class AccessLogMapper {
         this.path = path;
     }
 
-    public static AccessLogEntry StringToAccessLog (String line){
+    public static AccessLogEntry StringToAccessLog(String line) {
+        /*For a given line in the file, extract the AccessLogMapper object, IP address is the first string
+        Use regext to get the URL
+        */
         Pattern pattern = Pattern.compile("(?<=GET |POST |PUT |HEAD |DELETE |PATCH |OPTIONS).*?\\s");
         AccessLogEntry al = new AccessLogEntry();
         String[] splitted = line.split(" ");
         al.setIpAddress(splitted[0]);
 
         Matcher matcher = pattern.matcher(line);
-        if (matcher.find()){
+        if (matcher.find()) {
             al.setPath(matcher.group(0).trim());
         }
         return al;

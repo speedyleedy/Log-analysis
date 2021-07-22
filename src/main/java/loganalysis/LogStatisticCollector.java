@@ -10,8 +10,7 @@ public interface LogStatisticCollector {
 
         if (count == null) {
             map.put(key, 1);
-        }
-        else {
+        } else {
             map.put(key, count + 1);
         }
     }
