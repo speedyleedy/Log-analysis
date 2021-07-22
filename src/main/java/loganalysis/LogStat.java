@@ -1,45 +1,36 @@
 package loganalysis;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class LogStat {
-    private String ipAddress;
-    private String path;
-    private String type;
+
+    private final String ipAddress;
+    private final String path;
+    private final String type;
+    private int count;
+
+    public LogStat(String ipAddress, String path, String type) {
+        this.ipAddress = ipAddress;
+        this.path = path;
+        this.type = type;
+    }
 
     public String getType() {
         return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public String getPath() {
         return path;
     }
 
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    private Integer count;
-
     public String getIpAddress() {
         return ipAddress;
     }
 
-    public void setIpAddress(String ipAddress) {
-        this.ipAddress = ipAddress;
-    }
-
-    public Integer getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(Integer count) {
-        this.count = count;
+    public void increment() {
+        this.count++;
     }
 
     @Override
@@ -51,4 +42,6 @@ public class LogStat {
                 ", count=" + count +
                 '}';
     }
+
+
 }

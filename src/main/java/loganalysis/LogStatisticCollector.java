@@ -1,10 +1,20 @@
 package loganalysis;
 
-import java.util.HashMap;
-import java.util.List;
+import java.util.Map;
 
 public interface LogStatisticCollector {
 
-    void collect(HashMap<String, LogStat> list, AccessLogEntry entry);
+    default void collect(Map<String, Integer> map, AccessLogEntry entry) {
+        String key = this.getKey(entry);
+        Integer count = map.get(key);
 
+        if (count == null) {
+            map.put(key, 1);
+        }
+        else {
+            map.put(key, count + 1);
+        }
+    }
+
+    String getKey(AccessLogEntry entry);
 }
