@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: loganalysis.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.33 s <<< FAILURE! - in loganalysis.AppTest
+testTest(loganalysis.AppTest)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.NullPointerException
+	at loganalysis.AppTest.testTest(AppTest.java:41)
+
