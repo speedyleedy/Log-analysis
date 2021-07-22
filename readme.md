@@ -18,7 +18,7 @@ for example:
 ##If the file is in the same directory
 ```./logSearch.sh log.txt```
 
-###If the file is in another directory, you can use the relative or absolute path
+##If the file is in another directory, you can use the relative or absolute path
 ```./run-txn.search.sh ../../../mytransactionsfile.csv```
 
 if you have permission denied errors, type ```chmod +x run-txn-search.sh``` first,
