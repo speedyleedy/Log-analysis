@@ -2,19 +2,31 @@ package loganalysis;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-/**
- * Unit test for simple App.
- */
+import java.util.HashMap;
+
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+
+    InMemoryStore logStore;
+
+    @BeforeMethod
+    public void setUp() {
+        HashMap<String, String> logStore = new HashMap<>();
     }
+
+    @Test
+    public void testTest(){
+        String ip = "10.10.10.10";
+
+
+
+        Assert.assertEquals(1,1);
+    }
+
+
 }
