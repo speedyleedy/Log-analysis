@@ -12,9 +12,10 @@ from the root directory, run:
 
 ### linux / mac
 ```./logSearch.sh pathToFile```
+
 for example:
 
-###If the file is in the same directory
+##If the file is in the same directory
 ```./logSearch.sh log.txt```
 
 ###If the file is in another directory, you can use the relative or absolute path
