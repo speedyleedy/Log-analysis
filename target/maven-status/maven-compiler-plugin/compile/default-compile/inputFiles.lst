@@ -1,4 +1,11 @@
-C:\dev\loganalysis\src\main\java\loganalysis\InMemoryStore.java
-C:\dev\loganalysis\src\main\java\loganalysis\LogAccumulator.java
+C:\dev\loganalysis\src\main\java\loganalysis\AccessLogEntry.java
+C:\dev\loganalysis\src\main\java\loganalysis\LogStatisticCollector.java
+C:\dev\loganalysis\src\main\java\loganalysis\AccessLogMapper.java
+C:\dev\loganalysis\src\main\java\loganalysis\UrlStatCollector.java
 C:\dev\loganalysis\src\main\java\loganalysis\LogCollector.java
+C:\dev\loganalysis\src\main\java\loganalysis\LogSearch.java
+C:\dev\loganalysis\src\main\java\loganalysis\AbstractLogSearch.java
 C:\dev\loganalysis\src\main\java\loganalysis\App.java
+C:\dev\loganalysis\src\main\java\loganalysis\LogStat.java
+C:\dev\loganalysis\src\main\java\loganalysis\StatAccumulator.java
+C:\dev\loganalysis\src\main\java\loganalysis\IpStatCollector.java

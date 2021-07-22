@@ -1,4 +1,11 @@
-loganalysis\InMemoryStore.class
-loganalysis\LogAccumulator.class
+loganalysis\AbstractLogSearch.class
 loganalysis\App.class
 loganalysis\LogCollector.class
+loganalysis\LogStat.class
+loganalysis\UrlStatCollector.class
+loganalysis\StatAccumulator.class
+loganalysis\AccessLogEntry.class
+loganalysis\AccessLogMapper.class
+loganalysis\LogStatisticCollector.class
+loganalysis\LogSearch.class
+loganalysis\IpStatCollector.class
