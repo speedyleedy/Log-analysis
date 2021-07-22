@@ -25,7 +25,9 @@ if you have permission denied errors, type ```chmod +x run-txn-search.sh``` firs
 
 ### Run using mvn exec:
 ````mvn exec:java -Dexec.args=PATH_TO_FILE -quiet````
+
 there's an example file in the solution, to run that, type:
+
 ````mvn exec:java -Dexec.args=src/test/java/loganalysis/log.txt -quiet````
 
 ## Developer Notes
