@@ -21,7 +21,12 @@ for example:
 ### If the file is in another directory, you can use the relative or absolute path
 ```./run-txn.search.sh ../../../mytransactionsfile.csv```
 
-if you have permission denied errors, type ```chmod +x run-txn-search.sh``` first,
+if you have permission denied errors, type ```chmod +x run-txn-search.sh``` first
+
+### Run using mvn exec:
+````mvn exec:java -Dexec.args=PATH_TO_FILE -quiet````
+there's an example file in the solution, to run that, type:
+````mvn exec:java -Dexec.args=src/test/java/loganalysis/log.txt -quiet````
 
 ## Developer Notes
 I used the java streams collection API for this, this has an inbuilt accumulator, so it saved writing a lot of code.

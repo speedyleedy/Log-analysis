@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="46" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+  <suite name="Surefire suite" duration-ms="46" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="46" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+    <test name="Surefire test" duration-ms="46" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
       <class name="loganalysis.AppTest">
-        <test-method status="PASS" signature="FindMostCommonIpAddressIntegrationTest()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="FindMostCommonIpAddressIntegrationTest" duration-ms="15" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+        <test-method status="PASS" signature="FindMostCommonIpAddressIntegrationTest()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="FindMostCommonIpAddressIntegrationTest" duration-ms="15" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindMostCommonIpAddressIntegrationTest -->
-        <test-method status="PASS" signature="FindNumberOfUniqueIpAddresses()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="FindNumberOfUniqueIpAddresses" duration-ms="2" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+        <test-method status="PASS" signature="FindNumberOfUniqueIpAddresses()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="FindNumberOfUniqueIpAddresses" duration-ms="2" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindNumberOfUniqueIpAddresses -->
-        <test-method status="PASS" signature="TopThreeIpAddressesFromFileIntegrationTest()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="TopThreeIpAddressesFromFileIntegrationTest" duration-ms="2" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+        <test-method status="PASS" signature="TopThreeIpAddressesFromFileIntegrationTest()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="TopThreeIpAddressesFromFileIntegrationTest" duration-ms="2" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TopThreeIpAddressesFromFileIntegrationTest -->
-        <test-method status="PASS" signature="TopThreeUrlsFromFileIntegrationTest()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="TopThreeUrlsFromFileIntegrationTest" duration-ms="3" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+        <test-method status="PASS" signature="TopThreeUrlsFromFileIntegrationTest()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="TopThreeUrlsFromFileIntegrationTest" duration-ms="3" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TopThreeUrlsFromFileIntegrationTest -->
-        <test-method status="PASS" signature="extractValuesFromLogFile()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="extractValuesFromLogFile" duration-ms="0" started-at="2021-07-23T09:25:26 AEST" finished-at="2021-07-23T09:25:26 AEST">
+        <test-method status="PASS" signature="extractValuesFromLogFile()[pri:0, instance:loganalysis.AppTest@13deb50e]" name="extractValuesFromLogFile" duration-ms="0" started-at="2021-07-23T09:37:58 AEST" finished-at="2021-07-23T09:37:58 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extractValuesFromLogFile -->
