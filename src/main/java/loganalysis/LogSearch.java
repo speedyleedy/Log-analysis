@@ -17,7 +17,7 @@ public class LogSearch extends AbstractLogSearch {
         List<StatAccumulator> collect = getData(stream);
 
         System.out.println("**************************");
-        System.out.println("Most top 3 most avtive IP addresses are : ");
+        System.out.println("Most top 3 most active IP addresses are : ");
         System.out.println("**************************");
 
         getTopThreeIps(collect);
