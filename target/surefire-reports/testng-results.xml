@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="53" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+  <suite name="Surefire suite" duration-ms="48" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="53" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+    <test name="Surefire test" duration-ms="48" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
       <class name="loganalysis.LogStatisticTest">
-        <test-method status="PASS" signature="checkThatIPStatsAccumulate()[pri:0, instance:loganalysis.LogStatisticTest@4cf777e8]" name="checkThatIPStatsAccumulate" duration-ms="1" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="checkThatIPStatsAccumulate()[pri:0, instance:loganalysis.LogStatisticTest@4cf777e8]" name="checkThatIPStatsAccumulate" duration-ms="0" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatIPStatsAccumulate -->
-        <test-method status="PASS" signature="checkThatURLStatsAccumulate()[pri:0, instance:loganalysis.LogStatisticTest@4cf777e8]" name="checkThatURLStatsAccumulate" duration-ms="1" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="checkThatURLStatsAccumulate()[pri:0, instance:loganalysis.LogStatisticTest@4cf777e8]" name="checkThatURLStatsAccumulate" duration-ms="0" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkThatURLStatsAccumulate -->
       </class> <!-- loganalysis.LogStatisticTest -->
       <class name="loganalysis.LogCollectorTest">
-        <test-method status="PASS" signature="FindMostCommonIpAddressIntegrationTest()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="FindMostCommonIpAddressIntegrationTest" duration-ms="15" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="FindMostCommonIpAddressIntegrationTest()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="FindMostCommonIpAddressIntegrationTest" duration-ms="10" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindMostCommonIpAddressIntegrationTest -->
-        <test-method status="PASS" signature="FindNumberOfUniqueIpAddresses()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="FindNumberOfUniqueIpAddresses" duration-ms="2" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="FindNumberOfUniqueIpAddresses()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="FindNumberOfUniqueIpAddresses" duration-ms="1" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FindNumberOfUniqueIpAddresses -->
-        <test-method status="PASS" signature="TopThreeIpAddressesFromFileIntegrationTest()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="TopThreeIpAddressesFromFileIntegrationTest" duration-ms="2" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="TopThreeIpAddressesFromFileIntegrationTest()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="TopThreeIpAddressesFromFileIntegrationTest" duration-ms="2" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TopThreeIpAddressesFromFileIntegrationTest -->
-        <test-method status="PASS" signature="TopThreeUrlsFromFileIntegrationTest()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="TopThreeUrlsFromFileIntegrationTest" duration-ms="2" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="TopThreeUrlsFromFileIntegrationTest()[pri:0, instance:loganalysis.LogCollectorTest@59ec2012]" name="TopThreeUrlsFromFileIntegrationTest" duration-ms="2" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TopThreeUrlsFromFileIntegrationTest -->
       </class> <!-- loganalysis.LogCollectorTest -->
       <class name="loganalysis.AccessLogMapperTest">
-        <test-method status="PASS" signature="extractValuesFromLogFile()[pri:0, instance:loganalysis.AccessLogMapperTest@57fffcd7]" name="extractValuesFromLogFile" duration-ms="5" started-at="2021-07-23T21:02:54 AEST" finished-at="2021-07-23T21:02:54 AEST">
+        <test-method status="PASS" signature="extractValuesFromLogFile()[pri:0, instance:loganalysis.AccessLogMapperTest@57fffcd7]" name="extractValuesFromLogFile" duration-ms="6" started-at="2021-07-23T21:10:21 AEST" finished-at="2021-07-23T21:10:21 AEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extractValuesFromLogFile -->
