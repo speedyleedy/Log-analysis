@@ -13,7 +13,7 @@ public class App {
             logFile[0] = args[0];
         }
 
-        LogSearch l = new LogSearch();
+        LogRenderer l = new LogRenderer();
         l.searchLogs(logFile[0]);
 
     }

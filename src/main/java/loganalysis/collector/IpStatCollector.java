@@ -1,4 +1,4 @@
-package loganalysis;
+package loganalysis.collector;
 
 public class IpStatCollector implements LogStatisticCollector {
 

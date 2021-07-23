@@ -1,14 +1,32 @@
 package loganalysis;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import loganalysis.collector.AccessLogEntry;
+import loganalysis.collector.IpStatCollector;
+import loganalysis.collector.StatAccumulator;
+import loganalysis.collector.UrlStatCollector;
+import org.junit.Test;
 
-import java.util.Optional;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 public class LogStatisticTest {
 
     @Test
-    public void checkThatIPStatsAccumulate(){
+    public void IPStatsAccumulateWillAccumulate() {
+        StatAccumulator accumulator = new StatAccumulator(new IpStatCollector());
+        AccessLogEntry entry = new AccessLogEntry();
+        entry.setIpAddress("111.111.11.11");
+        entry.setPath("/testPath");
+
+        accumulator.processLine(entry);
+        assertThat(accumulator.getStats().get("111.111.11.11"), is(1));
+
+        accumulator.processLine(entry);
+        assertThat(accumulator.getStats().get("111.111.11.11"), is(2));
+    }
+
+    @Test
+    public void checkThatIPStatsAccumulate() {
 
         StatAccumulator accumulator = new StatAccumulator(new IpStatCollector());
         AccessLogEntry entry = new AccessLogEntry();
@@ -17,16 +35,14 @@ public class LogStatisticTest {
 
         accumulator.processLine(entry);
 
-        Assert.assertEquals(Optional.of(1), Optional.ofNullable(accumulator.getStats().get("111.111.11.11")));
-
-        //process same entry, confirm count is 2
+        assertThat(accumulator.getStats().get("111.111.11.11"), is(1));
         accumulator.processLine(entry);
-        Assert.assertEquals(Optional.of(2), Optional.ofNullable(accumulator.getStats().get("111.111.11.11")));
+        assertThat(accumulator.getStats().get("111.111.11.11"), is(2));
 
     }
 
     @Test
-    public void checkThatURLStatsAccumulate(){
+    public void checkThatURLStatsAccumulate() {
 
         StatAccumulator accumulator = new StatAccumulator(new UrlStatCollector());
         AccessLogEntry entry = new AccessLogEntry();
@@ -35,11 +51,12 @@ public class LogStatisticTest {
 
         accumulator.processLine(entry);
 
-        Assert.assertEquals(Optional.of(1), Optional.ofNullable(accumulator.getStats().get("/testPath")));
+        assertThat(accumulator.getStats().get("/testPath"), is(1));
 
         //process same entry, confirm count is 2
         accumulator.processLine(entry);
-        Assert.assertEquals(Optional.of(2), Optional.ofNullable(accumulator.getStats().get("/testPath")));
+        assertThat(accumulator.getStats().get("/testPath"), is(2));
+
 
     }
 

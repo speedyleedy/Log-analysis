@@ -1,27 +1,11 @@
-package loganalysis;
+package loganalysis.processor;
+
+import loganalysis.collector.AccessLogEntry;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class AccessLogMapper {
-    private String ipAddress;
-    private String path;
-
-    public String getIpAddress() {
-        return ipAddress;
-    }
-
-    public void setIpAddress(String ipAddress) {
-        this.ipAddress = ipAddress;
-    }
-
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
 
     public static AccessLogEntry StringToAccessLog(String line) {
         /*For a given line in the file, extract the AccessLogMapper object, IP address is the first string

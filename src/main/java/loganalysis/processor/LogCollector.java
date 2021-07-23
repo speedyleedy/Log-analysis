@@ -1,9 +1,14 @@
-package loganalysis;
+package loganalysis.processor;
+
+import loganalysis.collector.AccessLogEntry;
+import loganalysis.collector.IpStatCollector;
+import loganalysis.collector.StatAccumulator;
+import loganalysis.collector.UrlStatCollector;
 
 import java.util.Arrays;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
-import java.util.EnumSet;
 import java.util.function.BiConsumer;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
@@ -13,7 +18,7 @@ import java.util.stream.Collector;
 public class LogCollector implements Collector<AccessLogEntry, List<StatAccumulator>, List<StatAccumulator>> {
 
     /*Collector takes a supplier (a statAccumulator) and creates objects for each of my collectors.
-    * the accumulator method is called for each stream which will process each line twice, once for the IP collector
+     * the accumulator method is called for each stream which will process each line twice, once for the IP collector
     * and once for the URL collector
     * */
 

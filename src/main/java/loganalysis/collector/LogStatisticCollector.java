@@ -1,4 +1,4 @@
-package loganalysis;
+package loganalysis.collector;
 
 import java.util.Map;
 

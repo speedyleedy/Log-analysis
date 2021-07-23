@@ -1,12 +1,15 @@
-package loganalysis;
+package loganalysis.processor;
 
+import loganalysis.collector.AccessLogEntry;
+import loganalysis.processor.AccessLogMapper;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 public class AccessLogMapperTest {
 
     @Test
-    public void extractValuesFromLogFile(){
+    public void extractValuesFromLogFile() {
         String testValue = "50.112.00.11 - admin [11/Jul/2018:17:31:56 +0200] \"GET /asset.js HTTP/1.1\" 200 3574 \"-\" \"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6\"";
 
         AccessLogEntry entry = AccessLogMapper.StringToAccessLog(testValue);
