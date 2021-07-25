@@ -4,11 +4,8 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 import loganalysis.collector.StatAccumulator;
-import org.testng.Assert;
-
 import org.junit.Before;
 import org.junit.Test;
-
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

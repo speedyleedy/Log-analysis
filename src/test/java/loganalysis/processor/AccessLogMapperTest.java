@@ -1,9 +1,6 @@
 package loganalysis.processor;
 
 import loganalysis.collector.AccessLogEntry;
-import loganalysis.processor.AccessLogMapper;
-import org.testng.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
